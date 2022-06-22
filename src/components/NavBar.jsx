@@ -1,5 +1,15 @@
-import React from "react"; // Siempre hayt que hacerlo primero
+import React from "react"; // Siempre! Hay que importar react para utilizar el return
+import './NavBar.css';
 
-const NavBar =() => {
-
+const NavBar = () => {
+    return (
+        <ul>
+            <li><a className="active" href="#home">Home</a></li>
+            <li><a href="#news">Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#about">Catálogo</a></li>
+        </ul>
+    )
 }
+
+export default NavBar; //Hay que exportarlo para poder importarlo dentro de app.jsx

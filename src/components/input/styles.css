@@ -1,0 +1,9 @@
+.app-input{
+    padding: 10px;
+    text-align: center;
+    background-color: coral;
+    border-radius: 15px;
+    border-width: 3px;
+    border-color: black;
+    font-family: cursive;
+}
