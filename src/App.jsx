@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import Input from './components/input'
 import './App.css';
 import NavBar from './components/NavBar';
+import ItemListContainer from './containers/ItemListContainer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
 
       <NavBar />
+      <ItemListContainer greeting={'Hola Coders'}/>
       
     </div>
     
