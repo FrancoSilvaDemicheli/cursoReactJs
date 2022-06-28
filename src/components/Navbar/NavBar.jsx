@@ -1,5 +1,5 @@
 import React from "react"; // Siempre! Hay que importar react para utilizar el return
-import CarWidget from "./cartWidget";
+import CarWidget from "./../cartWidget/index";
 import './NavBar.css';
 
 const NavBar = () => {
