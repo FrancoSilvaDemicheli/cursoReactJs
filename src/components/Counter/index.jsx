@@ -1,7 +1,8 @@
 import React, {useState} from "react"
+import { Button } from "react-bootstrap";
 import swal from "sweetalert";
 
-import './style.css'; // PREGUNTAR COMO HACER EL IMPORT!
+import "./style.css"; // PREGUNTAR COMO HACER EL IMPORT!
 
 //funcion para Contador
 const ItemCount = ({onAdd}) => {
@@ -18,35 +19,37 @@ const ItemCount = ({onAdd}) => {
 
     return (
         <div className="count-container">
-            <div className="countContainetContador">
+            <div className="count-containet-contador">
 
-                
-                <button 
-                className="countContainerButton"
-                onClick={() => addProduct(-1)}
-                disabled = {qty === initial ? true : null }>
-                    -
-                </button>
+                <Button variant="secondary"                
+                    onClick={() => addProduct(-1)}
+                    disabled = {qty === initial ? true : null }>
+                    -                
+                </Button>
 
-                <span className="countContainerQty">{qty}</span>
+                <span className="count-container-qty">{qty}</span>
 
-                <button 
-                className="countContainerButton"
-                onClick={() => addProduct(+1)}
-                disabled = {qty === stock ? true : null }>
-                    boton mas
-                </button>
+                <Button variant="secondary"                
+                    onClick={() => addProduct(+1)}
+                    disabled = {qty === stock ? true : null }>
+                    +                
+                </Button>
 
 
             </div>
 
-            <button className="button-primary"
-            onClick={() => {onAdd (qty);
-                swal(`Añadido al carrito ${qty} productos`); 
-            }}
-            disabled={stock === 0 ? true : null}>
+            <Button 
+                variant="warning"
+                onClick={() => {
+                    onAdd (qty);
+                    swal(`Añadido al carrito ${qty} productos`); 
+                }}
+                disabled={stock === 0 ? true : null}>
+
                 Añadir al carrito
-            </button>
+
+            </Button>
+            
         </div>
     );
 };

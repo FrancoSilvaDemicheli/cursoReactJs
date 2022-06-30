@@ -1,8 +1,5 @@
-import logo from './logo.svg';
-import Input from './components/input'
 import './App.css';
 import ItemListContainer from './containers/ItemListContainer';
-import SimpleAccordion from './components/SimpleAccordion';
 import NavBar from './components/Navbar/NavBar';
 import ItemCount from './components/Counter';
 import { BrowserRouter, Routes, Route } from "react-router-dom";

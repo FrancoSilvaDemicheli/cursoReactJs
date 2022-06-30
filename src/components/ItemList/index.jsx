@@ -7,10 +7,10 @@ const ItemList = ({products}) => {
     console.log(products);
 
     return(
-        <div className='product-list-container'>
+        <div className='product-list-container' style={{display:'flex', flexWrap:'wrap'}}>
         
             
-            { products.length > 0 && products?.map((producto)=>{
+            { products.length > 0 && products?.map((producto) => {
                 return(
                     <Item
                         key={producto.id}

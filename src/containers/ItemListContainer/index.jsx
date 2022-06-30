@@ -27,7 +27,7 @@ const ItemListContainer = ({greeting, children}) => {
     return (
         <div style={{margin: '15px'}}>
             <p>{greeting}</p>            
-            <ItemList products={productos}/>          
+            <ItemList products={productos} style={{margin: 15}}/>          
             
         </div>
     )

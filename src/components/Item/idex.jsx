@@ -7,8 +7,8 @@ const Item = ({ producto }) => {
   const estilo = { width: '18rem', margin: 15 }
   return (
     <div>
-       <Card style={{estilo}}>
-        <Card.Img variant="top" src={img} style={{ maxHeight: 280 }}/>
+       <Card style={estilo}>
+        <Card.Img variant="top" src={img} style={{ maxHeight: '280px' }}/>
         <Card.Body>
         <Card.Title>{nombre}</Card.Title>
         <Card.Text>
