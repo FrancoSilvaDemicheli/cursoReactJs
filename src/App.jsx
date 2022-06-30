@@ -7,6 +7,7 @@ import NavBar from './components/Navbar/NavBar';
 import ItemCount from './components/Counter';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from './components/NotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

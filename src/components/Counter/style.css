@@ -29,6 +29,7 @@
     border: none;
     color: var(--just-white);
     background-color: var(--primary-color);
+    font-family: cursive ;
 }
   
 .countContainerButton[disabled] {
