@@ -5,26 +5,24 @@ import ItemCount from './components/Counter';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from './components/NotFound';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemDetailContainer from './containers/ItemDetailContainer/idex';
 
 
 
 
 function App() {
-
-  const onAdd = (qty) => {            //PREGUNTAR!!
-  };
-
   return (
     <BrowserRouter>
       
-      <NavBar />
+      <NavBar /> 
       <Routes>
         <Route path ='/' element={<ItemListContainer/>}></Route>
-        <Route path = '/category/:categoryId' element={<ItemCount/>}></Route>
-        <Route path ='/detail/:productId' element= {<itemDetailContainer/>}></Route>
+        <Route path = '/category/:categoryId' element={<ItemListContainer/>}></Route>
+        <Route path ='/detail/:productId' element= {<ItemDetailContainer/>}></Route>
         <Route path ='*' element={<NotFound/>}></Route>
-      </Routes>
-      <ItemCount onAdd={onAdd} />
+      </Routes> 
+
+      <ItemDetailContainer />   
         
       
     
