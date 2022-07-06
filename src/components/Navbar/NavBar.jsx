@@ -6,10 +6,11 @@ import './NavBar.css';
 const NavBar = () => {
     return (
         <ul style={{width: '100%'}}>
-            <li><Link to='/'>Home</Link></li>
-            {/* <li><Link to= '/category/'>Electronics</Link></li>
-            <li><Link >Contacto</Link></li>
-            <li><Link >Catálogo</Link></li>   */}
+            <li><Link to= '/'>Home</Link></li>
+            <li><Link to= '/category/inodoros'>Inodoros</Link></li>
+            <li><Link to= '/category/bides'>Bidets</Link></li>
+            <li><Link to= '/category/depositos'>Depositos</Link></li>
+            <li><Link to= '/category/lavatorios'>Lavatorios</Link></li>
             <CarWidget />
         </ul>
         

@@ -1,6 +1,7 @@
 [
     {
         "id" : 1,
+        "category" : "inodoros",
         "nombre" : "inodoro corto",
         "marca" : "ferrum",
         "precio" : "8000",
@@ -10,6 +11,7 @@
     },
     {
         "id" : 2,
+        "category" : "inodoros",
         "nombre" : "inodoro largo",
         "marca" : "ferrum",
         "precio" : "8500",
@@ -19,6 +21,7 @@
     },
     {
         "id" : 3,
+        "category" : "depositos",
         "nombre" : "deposito",
         "marca" : "ferrum",
         "precio" : "9000",
@@ -28,14 +31,16 @@
     },
     {
         "id" : 4,
+        "category" : "bides",
         "nombre" : "bide",
         "marca" : "ferrum",
         "precio" : "7500",
         "cantidad" : "5",
         "img" : "/DDBB/img/A_Bide1agujero_Milena_350.jpg"
-            },
+    },
     {
         "id" : 5,
+        "category" : "lavatorios",
         "nombre" : "lavatorio con pedestal",
         "marca" : "ferrum",
         "precio" : "9500",
@@ -45,6 +50,7 @@
     },
     {
         "id" : 6,
+        "category" : "inodoros",
         "nombre" : "inodoro corto",
         "marca" : "capea",
         "precio" : "7500",
@@ -54,6 +60,7 @@
     },
     {
         "id" : 7,
+        "category" : "inodoros",
         "nombre" : "inodoro largo",
         "marca" : "capea",
         "precio" : "8000",
@@ -63,6 +70,7 @@
     },
     {
         "id" : 8,
+        "category" : "depositos",
         "nombre" : "deposito",
         "marca" : "capea",
         "precio" : "7500",
@@ -72,6 +80,7 @@
     },
     {
         "id" : 9,
+        "category" : "bides",
         "nombre" : "bide",
         "marca" : "capea",
         "precio" : "7500",
@@ -81,6 +90,7 @@
     },
     {
         "id" : 10,
+        "category" : "lavatorios",
         "nombre" : "lavatorio con pedestal",
         "marca" : "capea",
         "precio" : "7500",

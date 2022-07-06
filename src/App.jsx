@@ -1,13 +1,10 @@
 import './App.css';
 import ItemListContainer from './containers/ItemListContainer';
 import NavBar from './components/Navbar/NavBar';
-import ItemCount from './components/Counter';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from './components/NotFound';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemDetailContainer from './containers/ItemDetailContainer/idex';
-
-
 
 
 function App() {
@@ -22,7 +19,7 @@ function App() {
         <Route path ='*' element={<NotFound/>}></Route>
       </Routes> 
 
-      <ItemDetailContainer />   
+         
         
       
     

@@ -1,8 +1,9 @@
 import React from "react";
+import './style.css';
 import { TbShoppingCart } from 'react-icons/tb';
 const CarWidget = () => {
     return(
-        <TbShoppingCart size = '32'/>
+        <TbShoppingCart className="cart" size={32} />
     )
 }
 

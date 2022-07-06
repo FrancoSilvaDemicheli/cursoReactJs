@@ -2,8 +2,10 @@ import React from 'react'
 import { Button, Card } from 'react-bootstrap';
 
 const ItemDetail = ({product}) => {
+
   console.log(product);
-  const { id, nombre, marca, precio, img } = product;
+
+  const {nombre, marca, precio, img } = product;
   const estilo = { width: '18rem', margin: 15 }; 
     return (
         <div>
