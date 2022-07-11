@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Card, Button } from 'react-bootstrap';
+import { CartContext } from '../../context/CartContext';
 import { useNavigate } from 'react-router-dom';
 
 const Item = ({ producto }) => {
 
+  
   const { id, nombre, marca, precio, img } = producto;
 
   const estilo = { width: '18rem', margin: 15 }
@@ -27,7 +29,7 @@ const Item = ({ producto }) => {
           <br />
           {precio}
         </Card.Text>
-        <Button variant="primary">Ver más</Button>
+        <Button style={{padding : '5px'}} variant="primary">Ver más</Button>
       </Card.Body>
     </Card>
     </div>

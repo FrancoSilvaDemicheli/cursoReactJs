@@ -5,7 +5,7 @@ import swal from "sweetalert";
 import "./style.css"; // PREGUNTAR COMO HACER EL IMPORT!
 
 //funcion para Contador
-const ItemCount = ({onAdd}) => {
+const ItemCount = ({onAdd, maxQty}) => {
     const initial = 1 ;//El numero inicial de una compra deberá ser igual o mayor 1
     const stock = 10 ; //Stock del producto, no se va a poder agregar mas de esa cantidad en la compra
 
