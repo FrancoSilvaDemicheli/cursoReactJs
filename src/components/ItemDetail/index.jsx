@@ -5,24 +5,20 @@ import { Shop } from '../../context/ShopContext';
 import ItemCount from '../ItemCount';
 
 const ItemDetail = ({product}) => {  
-  const {addItem} = useContext(Shop)
+
   const navigate = useNavigate();
 
   const [qtyAdded, setQtyAdded] = useState(0);
 
+  const {addItem} = useContext (Shop)
   
-  const onAdd = (qty) => {
-    console.log(qty);
-    addItem(product, qtyAdded)
-    console.log(qtyAdded);
-    setQtyAdded(2);    
+  const onAdd = (qty) => {//porqué no puedo hacer el addItem acaaa??????
+    setQtyAdded(qty);        
   };
   
   
   const navigateCart = () =>{
-    
-    // addItem(product, qtyAdded)
-
+    addItem(product, qtyAdded);
     navigate('/cart');
   }
 
@@ -46,7 +42,7 @@ const ItemDetail = ({product}) => {
        </Card.Body>
        {!qtyAdded ? <ItemCount onAdd ={onAdd} maxQty= {cantidad} /> : 
         <>
-          <Button variant='primary' onClick={navigateCart}>Ir al carrito</Button> 
+          <Button variant='primary' onClick={navigateCart}>Terminar compra</Button> 
           <Button variant='primary' onClick={navigateHome}>Seguir comprando</Button>
          </>
         }
