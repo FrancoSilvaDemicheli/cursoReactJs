@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Shop } from '../../context/ShopContext.js';
 import Item from '../Item/idex.jsx';
 
 
 const ItemList = ({products}) => {
 
-    console.log(products);
+    const {setEstadoA} = useContext(Shop);
+
+    const handleChangeState = () => {
+        setEstadoA('otro valor')
+    }
 
     return(
         <div className='product-list-container' style={{display:'flex', flexWrap:'wrap'}}>
@@ -18,6 +23,7 @@ const ItemList = ({products}) => {
                     />
                 );
             })}
+            <button onClick={handleChangeState}>Cambio de estado </button>
             
         </div>
     );

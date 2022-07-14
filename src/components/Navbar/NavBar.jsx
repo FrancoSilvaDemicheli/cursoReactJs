@@ -1,9 +1,13 @@
-import React from "react"; // Siempre! Hay que importar react para utilizar el return
+import React, { useContext } from "react"; // Siempre! Hay que importar react para utilizar el return
 import { Link } from "react-router-dom";
 import CarWidget from "./../cartWidget/index";
 import './NavBar.css';
+import { Shop } from "../../context/ShopContext";
 
 const NavBar = () => {
+
+    const {estadoA} = useContext(Shop)
+
     return (
         <ul style={{width: '100%'}}>
             <li><Link to= '/'>Home</Link></li>
@@ -11,6 +15,7 @@ const NavBar = () => {
             <li><Link to= '/category/bides'>Bidets</Link></li>
             <li><Link to= '/category/depositos'>Depositos</Link></li>
             <li><Link to= '/category/lavatorios'>Lavatorios</Link></li>
+            <li><a>{estadoA}</a></li>
             <CarWidget />
         </ul>
         
