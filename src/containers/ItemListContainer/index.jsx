@@ -6,7 +6,7 @@ import { db } from "../../firebase/config";
 import { collection, query, getDocs } from "firebase/firestore";
 
 
-const ItemListContainer = ({greeting, children}) => {
+const ItemListContainer = ({greeting}) => {
     
     const {categoryId} = useParams();    
 
@@ -21,7 +21,7 @@ const ItemListContainer = ({greeting, children}) => {
                 const querySnapshot = await getDocs(q);
                 const productos = [];
                 querySnapshot.forEach((doc) => {            
-                productos.push({id: doc.id, ...doc.data});
+                productos.push({id: doc.id, ...doc.data()});
                 });
 
                 // const response = await fetch('/DDBB/DDBB.json');
@@ -29,8 +29,10 @@ const ItemListContainer = ({greeting, children}) => {
 
                 if (categoryId){
                     setProductos( productos.filter (item => item.category === categoryId) )
+                    console.log(productos);
                 }     
-                else {setProductos(productos);}           
+                else {setProductos(productos);
+                    console.log(productos);}           
                 
             } catch (error) {
                 console.log('Hubo un error');
