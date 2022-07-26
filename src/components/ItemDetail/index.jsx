@@ -42,8 +42,8 @@ const ItemDetail = ({product}) => {
        </Card.Body>
        {!qtyAdded ? <ItemCount onAdd ={onAdd} maxQty= {cantidad} /> : 
         <>
-          <Button variant='primary' onClick={navigateCart}>Terminar compra</Button> 
-          <Button variant='primary' onClick={navigateHome}>Seguir comprando</Button>
+          <Button variant='primary' onClick={navigateCart}>Ir al carrito</Button> 
+          <Button variant='primary' onClick={navigateHome}>Volver a la tienda</Button>
          </>
         }
      </Card>

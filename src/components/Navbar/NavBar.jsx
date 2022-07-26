@@ -1,6 +1,6 @@
 import React, { useContext } from "react"; // Siempre! Hay que importar react para utilizar el return
 import { Link } from "react-router-dom";
-import CarWidget from "./../cartWidget/index";
+import CarWidget from "./../cartWidget/cartWidget";
 import './NavBar.css';
 import { Shop } from "../../context/ShopContext";
 
