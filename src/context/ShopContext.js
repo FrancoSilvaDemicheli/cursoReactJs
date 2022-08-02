@@ -2,9 +2,7 @@ import React, { createContext, useState } from 'react'
 
 export const Shop = createContext();
 
-const ShopProvider = ({ children}) => {
-
-    const [estadoA, setEstadoA] = useState("default")
+const ShopProvider = ({ children}) => {    
     
     const [cart, setCart] = useState([]);
 
@@ -26,8 +24,13 @@ const ShopProvider = ({ children}) => {
         return cart.find(elemento => elemento.id === producto.id);
     }
 
+    const removeItem = (id) => {
+        const productosFiltrados = cart.filter(producto => producto.id !== id);
+        setCart(productosFiltrados);
+    }
+
     return (
-        <Shop.Provider value = {{estadoA, setEstadoA, addItem, cart}}>
+        <Shop.Provider value = {{addItem, cart, removeItem}}>
             {children}
         </Shop.Provider>
   )
