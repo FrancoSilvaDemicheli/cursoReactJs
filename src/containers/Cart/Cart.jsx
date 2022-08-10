@@ -26,7 +26,7 @@ const Cart = () => {
               <td>{producto.marca}</td>
               <td>{producto.precio}</td>
               <td><img src={producto.img} width='50px' alt='img'/></td>
-              <Button variant="danger" onClick={removeItem(producto.id)}>X</Button>           
+              {/* <Button variant="danger" onClick={removeItem(producto.id)}>X</Button>            */}
           </tr>
           )
         })}
